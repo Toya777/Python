@@ -1,22 +1,24 @@
-res = int
+resultado = float
+print("\n---------CALCULADORA---------")
 
-print("\n-----Calculadora-----\n")
+num01 = float(input("\nDigite o primeiro numero: "))
+sinal = str(input("\nDigite o sinal: "))
+num02 = float(input("\nDigite o segundo numero: "))
 
-num01 = int(input("\nDigite o primeiro numero da soma:"))
-sinal = str(input("\nDigite o sinal:"))
-num02 = int(input("\nDigite o segundo numero:"))
-
-if(sinal == "-"):   
-    res = num01 - num02
-    print("o resultado é: ", res)
-elif (sinal == "+"):
-    res = num01 + num02
-    print("o resultado é: ", res)
-elif(sinal == "/" ):
-    res = num01 / num02
-    print("O resultado é: ", res)
+if(sinal == "-"):
+    resultado = num01 - num02
+    print("\nO resultado é: ", resultado)    
+elif(sinal == "+"):
+    resultado = num01 + num02
+    print("\nO resultado é: ", resultado)
 elif(sinal == "*"):
-    res = num01 * num02
-    print("O resultado é: ", res)
+    resultado = num01 * num02
+    print("\nO resultado é: ", resultado)
+    
+if(num02 == 0):
+    print("\nErro: Divisão por zero não é permitida.")
+elif(sinal == "%"):
+    resultado = num01 % num02
+    print("\nO resultado é: ", resultado)
 else:
-    print("sinal invalido")
+    print("\nO resultado é: ", resultado)
